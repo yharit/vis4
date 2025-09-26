@@ -1,0 +1,41 @@
+body{
+	margin: 0;
+}
+
+#navbar {
+	background: #333;
+    color: white;
+    height: 150px;
+    width: 100%;
+    text-align: center;	
+}
+
+#navbar h1 {
+	margin: 0;
+}
+
+#main-content {
+    background: #f4f4f4;
+    display: flex;
+    height: calc(100vh - 150px - 40px);
+    padding: 20px;
+}
+
+.sidebar {
+	background-color: #ddd;
+    width: 400px;
+    height: calc(100% - 40px);
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        width: 200px;
+    }
+}
+
+.content {
+	background-color: #fff;
+    flex: 1;
+    padding: 20px;
+}
