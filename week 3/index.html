@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+<div id='header'>
+
+	<h1>YAJURVI'S NUMBER ADDER</h1>
+	<h4>ITEM 1</h4>
+    <h4>ITEM 2</h4>
+	<h4>ITEM 3</h4>
+
+</div>
+
+<div id='content'>
+	<div class='sidebar'>
+		<h3>RESULT</h3>
+		<p id="resultId"></p>
+	</div>
+	<div class='main-content'>
+		<h3>CONTROL CENTER</h3>
+
+		<div id='buttons'>
+		<button id="minustwobutton">-2</button>
+		<button id="minusonebutton">-1</button>
+		<button id="resetbutton">Reset</button>
+		<button id="plusonebutton">+1</button>
+		<button id="plustwobutton">+2</button>
+		</div>
+	</div>
+</div>
+</body>
+
+<script>
+console.log("hello world!")
+var total = 0;
+
+	document
+    .getElementById("minustwobutton")
+    .addEventListener("click", function() {
+    	total = total - 2;
+		console.log("button clicked")
+        document.querySelector("#resultId").innerHTML = total;
+
+});
+
+  document
+    .getElementById("minusonebutton")
+    .addEventListener("click", function() {
+    	total = total - 1;
+		console.log("button clicked")
+        document.querySelector("#resultId").innerHTML = total;
+
+});
+
+  document
+    .getElementById("resetbutton")
+    .addEventListener("click", function() {
+    	total = 0;
+		console.log("button clicked")
+        document.querySelector("#resultId").innerHTML = total;
+
+});
+
+  document
+    .getElementById("plusonebutton")
+    .addEventListener("click", function() {
+    	total = total + 1;
+		console.log("button clicked")
+        document.querySelector("#resultId").innerHTML = total;
+
+});
+
+    document
+    .getElementById("plustwobutton")
+    .addEventListener("click", function() {
+    	total = total + 2;
+		console.log("button clicked")
+        document.querySelector("#resultId").innerHTML = total;
+
+});
+</script>
+</html>
