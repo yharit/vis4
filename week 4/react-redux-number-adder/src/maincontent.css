@@ -1,0 +1,41 @@
+.main-content {
+	background: #f4f4f4;
+    flex: 1;
+    padding: 60px;
+}
+
+.main-content h3 {
+    padding-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    flex: 1;
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: #ddd;
+
+}
+
+#colored-button {
+    display: flex;
+}
+
+#colored-button button {
+    background-color: black;
+    border-radius: 10px;
+    flex: 1;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: black;
+    color: white;
+
+}

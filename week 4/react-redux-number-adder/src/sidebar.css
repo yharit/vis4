@@ -1,0 +1,22 @@
+.sidebar {
+	background-color: #ddd;
+    width: 150px;
+    padding: 60px;
+    margin: 0px;
+    text-align: center;
+}
+
+/*#totalMessage {
+  font-style: italic;  
+  margin-bottom: 50px;
+}
+
+#summary {
+  text-transform: uppercase;
+  font-size: 9px;
+  text-align: left;
+}
+
+#historyList {
+  text-align: left;
+}*/

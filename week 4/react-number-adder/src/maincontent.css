@@ -8,11 +8,11 @@
     padding-bottom: 30px;
 }
 
-#buttons {
+.buttons {
     display: flex;
 }
 
-#buttons button {
+.buttons button {
     flex: 1;
     background-color: #ddd;
     border-radius: 10px;
@@ -23,19 +23,3 @@
 
 }
 
-#colored-button {
-    display: flex;
-}
-
-#colored-button button {
-    background-color: black;
-    border-radius: 10px;
-    flex: 1;
-    height: 50px;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-color: black;
-    color: white;
-
-}
