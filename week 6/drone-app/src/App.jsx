@@ -54,10 +54,10 @@ function MainLayout() {
             <span>Camera Feed</span>
           </NavLink></li>
           
-          {/*directs to drone routes page*/}
+          {/*directs to drone flight routes page*/}
           <li><NavLink to="/allroutes">
             <FiMap size={20} />
-            <span>Drone Routes</span>
+            <span>Flight Routes</span>
           </NavLink></li>
           
           {/*directs to drone location page*/}
