@@ -8,32 +8,37 @@ function MainContent() {
 
   const handleRemove2 = () => {
     dispatch({
-      type: 'REMOVE_2'
+      type: 'BUTTON_PRESSED',
+      payload: '-2'
     });
   };
 
   const handleRemove1 = () => {
     dispatch({
-      type: 'REMOVE_1'
+     type: 'BUTTON_PRESSED',
+      payload: '-1'
     });
   };
 
   const handleReset = () => {
     dispatch({
-      type: 'RESET'
-    });
-  };
+     type: 'BUTTON_PRESSED',
+      payload: 'RESET'
+  });
+};
 
   const handleAdd1 = () => {
     dispatch({
-      type: 'ADD_1',
-    });
+ type: 'BUTTON_PRESSED',
+      payload: '+1'
+  });
   };
 
   const handleAdd2 = () => {
-    dispatch({
-      type: 'ADD_2'
-    });
+        dispatch({
+     type: 'BUTTON_PRESSED',
+      payload: '+2'
+  });
   };
 
    const handleClear = () => {
@@ -46,13 +51,13 @@ function MainContent() {
 <div className='main-content'>
 			<h3>CONTROL CENTER</h3>
 				<div className='buttons'>
-        <button id="minustwobutton" onClick={() => {console.log("-2"); handleRemove2()}}>-2</button>
-					<button id="minusonebutton" onClick={() => {console.log("-1"); handleRemove1()}}>-1</button>
-					<button id="resetbutton" onClick={() => {console.log("Reset"); handleReset()}}>Reset</button>
-					<button id="plusonebutton" onClick={() => {console.log("+1"); handleAdd1()}}>+1</button>
-					<button id="plustwobutton" onClick={() => {console.log("+2"); handleAdd2()}}>+2</button>
+        <button id="minustwobutton" onClick={() => handleRemove2()}>-2</button>
+					<button id="minusonebutton" onClick={() => handleRemove1()}>-1</button>
+					<button id="resetbutton" onClick={() => handleReset()}>Reset</button>
+					<button id="plusonebutton" onClick={() => handleAdd1()}>+1</button>
+					<button id="plustwobutton" onClick={() => handleAdd2()}>+2</button>
 
-				</div>
+</div>
 				<div id='colored-button'>
 					<button id="clearallbutton" onClick={() => {console.log("Clear"); handleClear()}}>Clear History & Results</button>
 				</div>

@@ -20,46 +20,17 @@ const reducer = (state = initialState, action) => {
         ]
       };
 
-    case 'RESET':
-      console.log('RESET', state);
+         case 'BUTTON_PRESSED':
+      console.log('BUTTON_PRESSED', state, action.payload);
       return {
         ...state,
-        history: [...state.history, 'RESET'],
-        count: 0
+        history: [...state.history, action.payload],
+        count: state.count + action.payload
       };
 
-    case 'ADD_1':
-      console.log('ADD_1', state);
-      return {
-        ...state,
-        history: [...state.history, 1],
-        count: state.count + 1
-      };
 
-    case 'ADD_2':
-      console.log('ADD_2', state);
-      return {
-        ...state,
-        history: [...state.history, 2],
-        count: state.count + 2
-      };
 
-    case 'REMOVE_1':
-      console.log('REMOVE_1', state);
-      return {
-        ...state,
-        history: [...state.history, -1],
-        count: state.count - 1
-      };
-
-    case 'REMOVE_2':
-      console.log('REMOVE_2', state);
-      return {
-        ...state,
-        history: [...state.history, -2],
-        count: state.count - 2
-      };
-
+ 
 case 'CLEAR_ALL':
       console.log('CLEAR_ALL', state);
       return {

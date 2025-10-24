@@ -1,0 +1,36 @@
+.nav-list {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding: 0px;
+  margin: 0px;
+  background-color: #F2F6FC;
+  align-items: center;
+  justify-content: space-evenly;  
+}
+
+.nav-list li {
+	align-items: center;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-list li a {
+	font-size: 9px;
+	text-decoration: none;
+	color: gray;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+
+.nav-list a:hover {
+  color: black;
+}
+
+.nav-list a.active {
+  color: black;
+}
